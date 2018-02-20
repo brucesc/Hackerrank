@@ -7,7 +7,26 @@ class Solution
 
     static void staircase(int n)
     {
-        // Complete this function
+        for (int i = 1; i <= n; i++)
+        {
+            string printString = "";
+            int numOfSpaces = n - i;
+            int numOfHash = n - numOfSpaces;
+            for (int s = 0; s < numOfSpaces; s++)
+            {
+                printString += " ";
+            }
+            for (int a = 0; a < numOfHash; a++)
+            {
+                printString += "#";
+            }
+                Console.WriteLine(printString);
+            
+        }
+
+       
+        Console.ReadLine();
+
     }
 
     static void Main(String[] args)
